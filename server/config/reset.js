@@ -1,9 +1,10 @@
 import { pool } from "./database.js";
 import "./dotenv.js";
 
-const createTableQuery = `DROP TABLE IF EXISTS CustomCar;
-                            CREATE TABLE IF NOT EXISTS CustomCar(
+const createTableQuery = `DROP TABLE IF EXISTS CustomCars;
+                            CREATE TABLE IF NOT EXISTS CustomCars(
                                 id SERIAL PRIMARY KEY,
+                                name VARCHAR(255) NOT NULL,
                                 exterior VARCHAR(255) NOT NULL,
                                 roof VARCHAR(255) NOT NULL,
                                 wheels VARCHAR(255) NOT NULL,
