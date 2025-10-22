@@ -1,21 +1,15 @@
 import express from "express";
-import {
-  createCustomItem,
-  editCustomItem,
-  deleteCustomItem,
-  getCustomItem,
-  getCustomItems,
-} from "../controllers/customItem.js";
+import customCtrl from "../controllers/customItem.js";
 const router = express.Router();
 
-router.get("/", getCustomItems);
+router.get("/", customCtrl.getCustomItems);
 
-router.get("/:carId", getCustomItem);
+router.get("/:carId", customCtrl.getCustomItem);
 
-router.post("/", createCustomItem);
+router.post("/", customCtrl.createCustomItem);
 
-router.patch("/:carId", editCustomItem);
+router.patch("/:carId", customCtrl.editCustomItem);
 
-router.delete("/:carId", deleteCustomItem);
+router.delete("/:carId", customCtrl.deleteCustomItem);
 
 export default router;
