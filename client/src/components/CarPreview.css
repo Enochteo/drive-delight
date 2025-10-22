@@ -1,0 +1,42 @@
+.car-preview {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.preview-body {
+  width: 160px;
+  height: 90px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+.preview-roof {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 28%;
+  top: 6%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0.95;
+}
+.preview-wheels {
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
+  right: 6%;
+  text-align: center;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+.preview-meta {
+  display: flex;
+  flex-direction: column;
+}
+.preview-name {
+  font-weight: 700;
+}
+.preview-interior {
+  color: #666;
+  font-size: 0.9rem;
+}
