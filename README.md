@@ -2,7 +2,7 @@
 
 Submitted by: **Enoch Owoade**
 
-About this web app: **Have a custom car in mind. Create your dream cars on this websi.**
+About this web app: **Have a custom car in mind. Create your dream cars on this website.**
 
 Time spent: **3** hours
 
